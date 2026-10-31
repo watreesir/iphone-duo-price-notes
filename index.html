@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>duo-storage-steps: iPhone Duo storage upgrade costs in four stores</title>
+<meta name="description" content="Plain-text notes on what each iPhone Duo storage upgrade costs in the US, UK, Hong Kong and mainland China Apple stores, in local currency.">
+<style>
+  body { font: 15px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; max-width: 72ch; margin: 2.5rem auto; padding: 0 1rem; color: #222; background: #fdfdfb; }
+  h1 { font-size: 1.25rem; } h2 { font-size: 1rem; margin-top: 2rem; }
+  pre { background: #f2f2ee; padding: .8rem 1rem; overflow-x: auto; }
+  code { background: #f2f2ee; padding: 0 .2em; }
+  a { color: #2a6db0; }
+  hr { border: 0; border-top: 1px solid #ddd; margin: 2rem 0; }
+</style>
+</head>
+<body>
+<h1># duo-storage-steps</h1>
+
+<p>What each iPhone Duo storage upgrade costs, in the store's own currency. It's a small personal reference that I keep so I stop redoing the subtraction.</p>
+
+<h2>## data</h2>
+<p>Launch list prices, before trade-in, as recorded for Apple's four stores on 2026-09-13:</p>
+<pre>
+tier    US (USD)   UK (GBP)   HK (HKD)   CN (RMB)
+256GB   1,999      1,999      17,499     15,999
+512GB   2,199      2,199      19,299     17,999
+1TB     2,599      2,599      22,799     21,499
+2TB     3,199      3,199      27,999     26,499
+</pre>
+
+<h2>## steps (same row, same currency)</h2>
+<pre>
+step            +GB    US/UK   HK       CN
+256GB -> 512GB  256    +200    +1,800   +2,000
+512GB -> 1TB    512    +400    +3,500   +3,500
+1TB   -> 2TB    1024   +600    +5,200   +5,000
+</pre>
+
+<h2>## per extra GB (rounded, local currency)</h2>
+<pre>
+step            US/UK   HK      CN
+256GB -> 512GB  ~0.78   ~7.03   ~7.81
+512GB -> 1TB    ~0.78   ~6.84   ~6.84
+1TB   -> 2TB    ~0.59   ~5.08   ~4.88
+</pre>
+<p>In every store, the largest step costs the least per extra gigabyte and the most in absolute terms. That's only a reason to buy 2TB if you would actually fill it.</p>
+
+<h2>## caveats</h2>
+<ul>
+  <li>Columns are different currencies. Don't compare digits across columns. US and UK share numerals, and that tells you nothing about which costs less.</li>
+  <li>The prices are a dated snapshot. Check the live store before you rely on them.</li>
+  <li>Trade-in, financing, AppleCare+ and accessories are left out on purpose.</li>
+  <li>Per-GB maths treats 1TB as 1,024GB. Using 1,000GB moves the last digits slightly and leaves the order unchanged.</li>
+  <li>A cheaper store only helps if the phone can activate your number there. The mainland China activation list is A3518, A3635, A3715, A3718, A3721.</li>
+</ul>
+
+<h2>## source</h2>
+<p>Prices transcribed from the regional comparison table at <a href="https://iphoneduo.io/price">iphoneduo.io</a>, which links each column to the Apple store it came from. The step and per-GB tables are my own arithmetic.</p>
+
+<hr>
+<p><small>no js · no cookies · license: CC0 for the arithmetic</small></p>
+</body>
+</html>
